@@ -1,6 +1,5 @@
-# whereis()
-whereis is a bash function that overloads whereis. It locates programs (using native 'whereis')
-or locates a file (i.e. script, etc). NOTE: uses 'find' which excludes ~\Library, searches current folder structure.
+# which()
+A bash function that overloads which. It looks for aliases/functions then programs (using native 'which')
 
 # OS
 Used / created for macOS bash but can be modified for other OS.
@@ -14,14 +13,14 @@ I use it to get the following:
   3) get the location of a speific file  ('find')
 
 ## Help menu
-When you execute whereis() without parameters you will get the following:
-![Help menu](https://github.com/al-jimenez/whereis/blob/master/whereis.png)
+When you execute which() without parameters you will get the following:
+![Help menu](https://github.com/al-jimenez/which/blob/master/which.png)
 
 ## Usage Examples:
-   whereis which      - returns '/usr/bin/which'
+   which which      - returns '/usr/bin/which'
 
-   whereis whereis    - returns '/usr/bin/whereis'
+   which which    - returns '/usr/bin/which'
 
-   whereis dotfiles.sh - returns locations of dotfiles.sh (w/find)
+   which dotfiles.sh - returns locations of dotfiles.sh (w/find)
 
-   whereis chknet.sh  - returns locations of chknet.sh (w/find)
+   which chknet.sh  - returns locations of chknet.sh (w/find)
