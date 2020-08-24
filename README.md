@@ -18,31 +18,31 @@ When you execute which() without parameters you will get the following:
 
 ## Options
 
-  -a  | aliases   Display all aliases with 'less'
+  -a  | aliases        - Display all aliases with 'less'
 
-  -f  | functions Display all fucntions with 'less'
+  -f  | functions      - Display all fucntions with 'less'
 
-  -ff | find      find a specifc file and return path
+  -ff | find           - find a specifc file and return path
 
-  -v  | favs      Favorite aliases, functions, and scripts (file: .favs)
+  -v  | favs           - Favorite aliases, functions, and scripts (file: .favs)
 
-  -?  | help      This help
+  -?  | help           - This help
 
 ## Usage Examples:
 
-   which                 Display help menu.
+   which                    - Display help menu.
 
-   which <alias name>    Returns the alias definition.
+   which <alias name>       - Returns the alias definition.
 
-   which <function name> Returns the fucntion definition using 'less'
+   which <function name>    - Returns the fucntion definition using 'less'
 
-   which <program>       Returns program using '/usr/bin/which'
+   which <program>          - Returns program using '/usr/bin/which'
 
-   which -a              Display all aliases with 'less'
+   which -a                 - Display all aliases with 'less'
 
-   which -f              Display all fucntions with 'less'
+   which -f                 - Display all fucntions with 'less'
 
-   which -ff <file>      find a specifc file and return path
+   which -ff <file>         - find a specifc file and return path
 
-   which -v              List (.favs) favorite aliases, functions, & scripts
-                          (NOTE: favs() maintains .favs file)
+   which -v                 - List (.favs) favorite aliases, functions, & scripts
+                              (NOTE: favs() maintains .favs file)
