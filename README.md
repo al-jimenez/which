@@ -1,7 +1,7 @@
 # which()
 A bash function that overloads which. It looks for aliases/functions then programs (using native 'which')
 
-# OS
+### OS
 Used / created for macOS bash but can be modified for other OS.
 
 ## Use
