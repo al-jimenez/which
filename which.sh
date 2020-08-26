@@ -19,7 +19,7 @@ which() {
     ${FUNCNAME[0]} <options> | <alias name> | <function name> | <program name>
 
     OPTIONS:
-      -a  | aliases   Display all aliases with 'less' 
+      -a  | aliases   Display all aliases with 'less'
       -f  | functions Display all fucntions with 'less'
       -ff | find      find a specifc file and return path
       -v  | favs      Favorite aliases, functions, and scripts (file: .favs)
@@ -38,8 +38,8 @@ which() {
    "
    return;
    }
-   [[ $( alias | grep "alias ${1}=" ) ]] && { alias ${1}; }  #return;
-   [[ $( declare -f ${1} ) ]] && { declare -f ${1} | less; } #return;
+   [[ $( alias | grep "alias ${1}=" ) ]] && { alias ${1}; }
+   [[ $( declare -f ${1} ) ]] && { declare -f ${1} | less; }
    /usr/bin/which ${1};
 }
 export -f which;
