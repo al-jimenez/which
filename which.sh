@@ -41,5 +41,7 @@ which() {
    [[ $( alias | grep "alias ${1}=" ) ]] && { alias ${1}; }
    [[ $( declare -f ${1} ) ]] && { declare -f ${1} | less; }
    /usr/bin/which ${1};
+   return;
+
 }
 export -f which;
